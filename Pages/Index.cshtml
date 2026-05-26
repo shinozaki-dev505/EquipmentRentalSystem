@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "機材貸出管理システム";
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">機材貸出管理システム</h1>
+        <p class="lead text-muted">機材の貸出・返却登録をリアルタイムにOracleデータベースへ反映します。</p>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert @(Model.Message.StartsWith("✅") ? "alert-success" : "alert-danger") role="alert">
+            @Model.Message
+        </div>
+    }
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white text-center">
+                    <h5 class="mb-0">処理フォーム</h5>
+                </div>
+                <div class="card-body p-4">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="EquipmentId" class="form-label fw-bold">機材ID</label>
+                            <input type="text" class="form-control form-control-lg" id="EquipmentId" name="EquipmentId" value="@Model.EquipmentId" placeholder="例: E001" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="UserId" class="form-label fw-bold">ユーザーID <span class="text-muted small">（返却時は不要）</span></label>
+                            <input type="text" class="form-control form-control-lg" id="UserId" name="UserId" value="@Model.UserId" placeholder="例: U001">
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" asp-page-handler="Rent" class="btn btn-success btn-lg">
+                                🚀 貸出処理を実行する
+                            </button>
+                            <button type="submit" asp-page-handler="Return" class="btn btn-orange btn-lg text-white" style="background-color: #fd7e14;">
+                                ↩️ 返却処理を実行する
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
