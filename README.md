@@ -22,7 +22,12 @@ C# (ASP.NET Core Razor Pages) と Oracle Database を連動させた、実務を
    * DB接続パスワードなどの機密情報は、.NETの環境変数機能（ユーザーシークレット）を活用してソースコードから完全に隠蔽し、GitHubへの漏洩を防止しています。
 
 ## ✨ 画面イメージ
+1. **貸出出庫登録機能**
 
+<img width="1915" height="914" alt="image" src="https://github.com/user-attachments/assets/e85ce7cb-3b75-414d-8e2b-261a0060399e" />
+
+
+2. **返却入庫登録機能**
 
 ## 📁 データベース構成 (SQLフォルダ内)
 * `Local_XE_SYS.sql`: プラガブルデータベース(XEPDB1)の設定、専用ユーザー作成、権限付与スクリプト
