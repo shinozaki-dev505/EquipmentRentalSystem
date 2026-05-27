@@ -21,6 +21,9 @@ C# (ASP.NET Core Razor Pages) と Oracle Database を連動させた、実務を
 4. **徹底したセキュリティ対策（User Secrets）**
    * DB接続パスワードなどの機密情報は、.NETの環境変数機能（ユーザーシークレット）を活用してソースコードから完全に隠蔽し、GitHubへの漏洩を防止しています。
 
+## ✨ 画面イメージ
+
+
 ## 📁 データベース構成 (SQLフォルダ内)
 * `Local_XE_SYS.sql`: プラガブルデータベース(XEPDB1)の設定、専用ユーザー作成、権限付与スクリプト
 * `Local_XEPDB1_Portfolio.sql`: テーブル、制約、およびストアドプロシージャ（PL/SQL）の定義スクリプト
