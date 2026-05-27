@@ -28,6 +28,8 @@ C# (ASP.NET Core Razor Pages) と Oracle Database を連動させた、実務を
 <img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/927e9804-6f9f-404f-8bb7-9e3ce6921337" />
 
 2. **返却入庫登録機能**
+   <img width="1916" height="915" alt="image" src="https://github.com/user-attachments/assets/86f9a9df-4701-47b1-9601-f2165fcdbccd" />
+
 
 ## 📁 データベース構成 (SQLフォルダ内)
 * `Local_XE_SYS.sql`: プラガブルデータベース(XEPDB1)の設定、専用ユーザー作成、権限付与スクリプト
