@@ -25,7 +25,7 @@ C# (ASP.NET Core Razor Pages) と Oracle Database を連動させた、実務を
 1. **貸出出庫登録機能**
 
 <img width="1915" height="914" alt="image" src="https://github.com/user-attachments/assets/e85ce7cb-3b75-414d-8e2b-261a0060399e" />
-
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/927e9804-6f9f-404f-8bb7-9e3ce6921337" />
 
 2. **返却入庫登録機能**
 
